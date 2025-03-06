@@ -18,52 +18,52 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body class="d-flex flex-column h-100">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-        <div class="container px-5">
-            <a class="navbar-brand" href="#home"><span class="fw-bolder text-primary">Martí's Portfolio</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">My Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+    <div class="container px-5">
+        <a class="navbar-brand" href="#home"><span class="fw-bolder text-primary">Martí's Portfolio</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">My Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Home Section -->
-    <header id="home" class="py-5">
-        <div class="container px-5 pb-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-xxl-5">
-                    <div class="text-center text-xxl-start">
-                        <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                            <div class="text-uppercase">Junior Developer</div>
-                        </div>
-                        <div class="fs-3 fw-light text-muted">Ready to learn and innovate!</div>
-                        <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">I'm Martí Serra Riera</span></h1>
-                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="#about">About Me</a>
-                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="#projects">Projects</a>
-                        </div>
+<!-- Home Section -->
+<header id="home" class="py-5" style="padding-top: 80px;">
+    <div class="container px-5 pb-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-xxl-5">
+                <div class="text-center text-xxl-start">
+                    <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                        <div class="text-uppercase">Junior Developer</div>
+                    </div>
+                    <div class="fs-3 fw-light text-muted">Ready to learn and innovate!</div>
+                    <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">I'm Martí Serra Riera</span></h1>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="#about">About Me</a>
+                        <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="assets/CV_English.pdf" download="CV_English.pdf">Download CV</a>
                     </div>
                 </div>
-                <div class="col-xxl-7">
-                    <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                        <div class="profile bg-gradient-primary-to-secondary">
-                            <img class="profile-img" src="assets/profile.png" alt="..." />
-                        </div>
+            </div>
+            <div class="col-xxl-7">
+                <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                    <div class="profile bg-gradient-primary-to-secondary">
+                        <img class="profile-img" src="assets/profile.png" alt="..." />
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
 <!-- My Portfolio Section -->
 <section id="portfolio" class="bg-light py-5">
@@ -90,29 +90,83 @@
                     <p class="lead fw-light mb-4">Here's a bit more about me, my experience, and my skills.</p>
                     <p class="text-muted">I'm a passionate Junior Developer with a strong interest in web development and programming. I have experience working with various technologies and enjoy building innovative projects. Below, you'll find more details about my background and skills.</p>
                 </div>
-                <!-- Add your experience, education, and skills here -->
+                <!-- Experience -->
                 <div class="row gx-5">
                     <div class="col-md-6">
                         <h3 class="fw-bolder">Experience</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="text-muted">
+                            <li>
+                                <strong>Prototype Auditor, Improvement Proposal, and Defect Correction – RIEJU (2024)</strong><br>
+                                Summer internship focused on prototypes, gaining knowledge about various motorcycle models, systems, and technical functionalities (including testing).
+                            </li>
+                            <li>
+                                <strong>Basketball Coach – Club ADEPAF (2022-2024)</strong><br>
+                                Experience with teams composed of people with mental disabilities, promoting inclusion and teamwork.
+                            </li>
+                            <li>
+                                <strong>Motorcycle Racing Mechanic – RIEJU (2022-2023)</strong><br>
+                                Preparation and adjustment of enduro motorcycles for professional riders. Active participation in the 2022 and 2023 French Enduro Championship, providing technical support on the track and maintenance during competitions.
+                            </li>
+                            <li>
+                                <strong>Volunteer – El Dofí (2021-2022)</strong><br>
+                                Collaboration in a basketball team made up of adults with mental disabilities, promoting inclusion and sportsmanship.
+                            </li>
+                        </ul>
                     </div>
                     <div class="col-md-6">
                         <h3 class="fw-bolder">Education</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="text-muted">
+                            <li>
+                                <strong>Higher Vocational Education in Multiplatform Application Development (DAM)</strong><br>
+                                Institut Poblenou (Barcelona)<br>
+                                2024 - Present
+                            </li>
+                            <li>
+                                <strong>Scientific-Technological Baccalaureate</strong><br>
+                                Institut Alexandre Deulofeu (Figueres)<br>
+                                2022-2024
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <!-- Skills and Languages -->
                 <div class="row gx-5 mt-4">
                     <div class="col-md-6">
                         <h3 class="fw-bolder">Skills</h3>
                         <ul class="text-muted">
-                            <li>HTML, CSS, JavaScript</li>
-                            <li>Python, Node.js</li>
-                            <li>Responsive Design</li>
+                            <li>Responsible and proactive</li>
+                            <li>Strong problem-solving skills</li>
+                            <li>Teamwork and collaboration</li>
+                            <li>Resilience and adaptability</li>
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <h3 class="fw-bolder">Interests</h3>
-                        <p class="text-muted">Web Development, AI, and Open Source Projects.</p>
+                        <h3 class="fw-bolder">Languages</h3>
+                        <ul class="text-muted">
+                            <li>Catalan/Spanish – Native</li>
+                            <li>English – Basic level</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Computer Knowledge -->
+                <div class="row gx-5 mt-4">
+                    <div class="col-md-12">
+                        <h3 class="fw-bolder">Technical Skills</h3>
+                        <ul class="text-muted">
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>Databases</li>
+                            <li>Computer Systems</li>
+                            <li>Linux</li>
+                            <li>Markup Languages (HTML, CSS)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Hobbies -->
+                <div class="row gx-5 mt-4">
+                    <div class="col-md-12">
+                        <h3 class="fw-bolder">Hobbies</h3>
+                        <p class="text-muted">I enjoy sports related to vehicles, individual technical sports, team sports (especially basketball), and video games.</p>
                     </div>
                 </div>
             </div>
@@ -157,31 +211,43 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-gradient-primary-to-secondary text-white">
-        <div class="container px-5 my-5">
-            <div class="text-center">
-                <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="#contact">Contact me</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
-                <div class="col-auto">
-                    <a class="small" href="#!">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Contact</a>
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-gradient-primary-to-secondary text-white">
+    <div class="container px-5 my-5">
+        <div class="text-center">
+            <h2 class="display-4 fw-bolder mb-4">Contact Me</h2>
+            <p class="lead fw-light mb-4">Feel free to reach out to me for any inquiries or collaborations.</p>
+            <div class="d-flex flex-column align-items-center gap-3">
+                <!-- Email -->
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-envelope-fill fs-4"></i>
+                    <a href="mailto:serra.mriera@gmail.com" class="text-white text-decoration-none">serra.mriera@gmail.com</a>
+                </div>
+                <!-- Phone -->
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone-fill fs-4"></i>
+                    <a href="tel:+34612566530" class="text-white text-decoration-none">+34 612 56 65 30</a>
+                </div>
+                <!-- GitHub -->
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-github fs-4"></i>
+                    <a href="https://github.com/SerraMarti" target="_blank" class="text-white text-decoration-none">GitHub Profile</a>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-auto">
+                <div class="small m-0">Martí Serra i Riera</div>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
