@@ -141,8 +141,98 @@ body {
   color: #333; 
 }
 
+/*Projects*/
 
-/*About Me End*/
+.creative-cards {
+  padding: 120px 0;
+  position: relative;
+}
+
+.creative-cards .container {
+  max-width: 1320px;
+  width: 100%;
+  padding-right: .75rem;
+  padding-left: .75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.creative-cards .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar las tarjetas */
+}
+
+.creative-cards .container .row .card-column {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  text-align: center;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.card-details {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+.card-details:before {
+  content: "";
+  width: 200px; /* Tamaño del círculo morado */
+  height: 200px; /* Tamaño del círculo morado */
+  background: linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%; /* Forma redonda */
+  z-index: -1;
+  transition: .3s ease-in-out;
+}
+
+.card-details:hover:before {
+  background: linear-gradient(315deg, rgba(30, 48, 243, 0.8) 0%, rgba(226, 30, 128, 0.8) 100%);
+}
+
+.card-icons {
+  width: 140px;
+  height: 140px; /* Tamaño del círculo blanco */
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icons:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Forma redonda */
+  background: #fff;
+  border-color: rgba(104, 30, 243, 0.8);
+  transition: .3s ease-in-out;
+}
+
+.card-details:hover .card-icons:before {
+  background: linear-gradient(315deg, rgba(30, 48, 243, 0.8) 0%, rgba(226, 30, 128, 0.8) 100%);
+  border-color: rgba(104, 30, 243, 0.8);
+}
+
+.card-icons img {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+/*Projects end*/
 
 hr {
   margin: 1rem 0;
