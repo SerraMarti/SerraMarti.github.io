@@ -93,16 +93,16 @@
                 <!-- Accordion -->
                 <div class="accordion-continer">
                     <div class="accordion" id="aboutAccordion">
-                        <!-- Technical Skills -->
+                        <!-- Technical Skills (Abierto por defecto) -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingSkills">
-                                <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkills" aria-expanded="false" aria-controls="collapseSkills">
+                                <button class="accordion-button fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkills" aria-expanded="true" aria-controls="collapseSkills">
                                     Technical Skills
                                 </button>
                             </h2>
-                            <div id="collapseSkills" class="accordion-collapse collapse" aria-labelledby="headingSkills">
+                            <div id="collapseSkills" class="accordion-collapse collapse show" aria-labelledby="headingSkills">
                                 <div class="accordion-body">
-                                    <ul class="text-muted">
+                                    <ul class="text-muted skill-list"> <!-- Añadí la clase "skill-list" -->
                                         <li>Java</li>
                                         <li>Python</li>
                                         <li>Databases</li>
@@ -126,28 +126,33 @@
                             <div id="collapseExperience" class="accordion-collapse collapse" aria-labelledby="headingExperience">
                                 <div class="accordion-body">
                                     <ul class="text-muted">
+                                        <p class="fw-bolder"> <strong>Prototype Auditor, Improvement Proposal, and Defect Correction – RIEJU (2024)</strong></p>
+                                        <li> Focused on prototype testing, learning about various motorcycle models and their systems.<br></li>
+                                        <li> Gained hands-on experience with technical functionalities, including testing and defect corrections.</li>
+                                        <br>
+                                        <p class="fw-bolder"> <strong>Basketball Coach – Club ADEPAF (2022-2024)</strong></p>
                                         <li>
-                                            <strong>Prototype Auditor, Improvement Proposal, and Defect Correction – RIEJU (2024)</strong><br>
-                                            Summer internship focused on prototypes, gaining knowledge about various motorcycle models, systems, and technical functionalities (including testing).
+                                             Coached teams composed of people with mental disabilities.<br>
                                         </li>
+                                        <li>Promoted teamwork, inclusion, and social integration through basketbal</li>
+                                        <br>
+                                        <p class="fw-bolder"> <strong>Motorcycle Racing Mechanic – RIEJU (2022-2023)</strong></p>
                                         <li>
-                                            <strong>Basketball Coach – Club ADEPAF (2022-2024)</strong><br>
-                                            Experience with teams composed of people with mental disabilities, promoting inclusion and teamwork.
+                                             Prepared and adjusted enduro motorcycles for professional riders.<br>
                                         </li>
+                                        <li>Provided technical support and maintenance during the 2022 and 2023 French Enduro Championship.</li>
+                                        <br>
+                                        <p class="fw-bolder"> <strong>Volunteer – El Dofí (2021-2022)</strong></p>
                                         <li>
-                                            <strong>Motorcycle Racing Mechanic – RIEJU (2022-2023)</strong><br>
-                                            Preparation and adjustment of enduro motorcycles for professional riders. Active participation in the 2022 and 2023 French Enduro Championship, providing technical support on the track and maintenance during competitions.
+                                             Collaborated with a basketball team of adults with mental disabilities.<br>
                                         </li>
-                                        <li>
-                                            <strong>Volunteer – El Dofí (2021-2022)</strong><br>
-                                            Collaboration in a basketball team made up of adults with mental disabilities, promoting inclusion and sportsmanship.
-                                        </li>
+                                        <li>Focused on inclusion, sportsmanship, and creating a positive environment.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="accordion" id="aboutAccordion">
                         <!-- Education & Languages -->
                         <div class="accordion-item">
@@ -156,7 +161,7 @@
                                     Education & Languages
                                 </button>
                             </h2>
-                            <div id="collapseEducation" class="accordion-collapse collapse " aria-labelledby="headingEducation">
+                            <div id="collapseEducation" class="accordion-collapse collapse" aria-labelledby="headingEducation">
                                 <div class="accordion-body">
                                     <h3 class="fw-bolder">Education</h3>
                                     <ul class="text-muted">
@@ -182,25 +187,52 @@
                     </div>
                     
                     <div class="accordion" id="aboutAccordion">
-
-                        <!-- Lifestyle -->
+                        <!-- Lifestyle (Abierto por defecto) -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingLifestyle">
-                                <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLifestyle" aria-expanded="false" aria-controls="collapseLifestyle">
+                                <button class="accordion-button fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLifestyle" aria-expanded="true" aria-controls="collapseLifestyle">
                                     Lifestyle
                                 </button>
                             </h2>
-                            <div id="collapseLifestyle" class="accordion-collapse collapse" aria-labelledby="headingLifestyle">
+                            <div id="collapseLifestyle" class="accordion-collapse collapse show" aria-labelledby="headingLifestyle">
                                 <div class="accordion-body">
-                                    <h3 class="fw-bolder">Hobbies</h3>
-                                    <p class="text-muted">I enjoy sports related to vehicles, individual technical sports, team sports (especially basketball), and video games.</p>
-                                    <h3 class="fw-bolder mt-4">Skills</h3>
-                                    <ul class="text-muted">
-                                        <li>Responsible and proactive</li>
-                                        <li>Strong problem-solving skills</li>
-                                        <li>Teamwork and collaboration</li>
-                                        <li>Resilience and adaptability</li>
-                                    </ul>
+                                    <div class="accordion-content">
+                                        <div class="card">
+                                            <h3>🎯 Hobbies</h3>
+                                            <div class="card-content">
+                                                <div class="hobby">
+                                                    <span>🏍️</span>
+                                                    <p><strong>Motorsports</strong><br> Passion for motorcycles and racing.</p>
+                                                </div>
+                                                <div class="hobby">
+                                                    <span>🏀</span>
+                                                    <p><strong>Basketball</strong><br> Love team strategy and competition.</p>
+                                                </div>
+                                                <div class="hobby">
+                                                    <span>🎮</span>
+                                                    <p><strong>Gaming</strong><br> Enjoy video games and interactive experiences.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="card">
+                                            <h3>🛠️ Skills</h3>
+                                            <div class="card-content">
+                                                <div class="skill">
+                                                    <span>✔️</span>
+                                                    <p><strong>Proactive</strong><br> Always engaged and responsible.</p>
+                                                </div>
+                                                <div class="skill">
+                                                    <span>💡</span>
+                                                    <p><strong>Problem Solving</strong><br> Finding creative solutions.</p>
+                                                </div>
+                                                <div class="skill">
+                                                    <span>🤝</span>
+                                                    <p><strong>Teamwork</strong><br> Adapt well to collaboration.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
