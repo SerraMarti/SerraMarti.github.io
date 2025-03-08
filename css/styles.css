@@ -105,7 +105,7 @@ body {
   background: linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
   border: none;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 1px;
   overflow: hidden;
 }
 
@@ -130,10 +130,9 @@ body {
 
 .accordion-body {
   background: rgba(255, 255, 255, 0.9); 
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 11px px;
   padding: 20px;
 }
-
 
 .accordion-body h3,
 .accordion-body p,
@@ -141,6 +140,7 @@ body {
 .accordion-body li {
   color: #333; 
 }
+
 
 /*About Me End*/
 
