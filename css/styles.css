@@ -193,7 +193,7 @@ body {
 /*Projects*/
 
 .creative-cards {
-  padding: 120px 0;
+  padding: 120px 0; /* Padding para PC */
   position: relative;
 }
 
@@ -210,36 +210,37 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 30px; /* Espacio entre tarjetas */
 }
 
 .creative-cards .container .row .card-column {
-  flex: 0 0 auto;
-  width: 33.33333333%;
+  flex: 1 1 300px; /* Flexibilidad para adaptarse al tamaño */
   text-align: center;
   max-width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin-bottom: 30px; /* Espacio adicional entre tarjetas */
 }
 
 .card-details {
-  width: 80%;
+  width: 100%; /* Ajustar al 100% del contenedor */
   margin: auto;
   position: relative;
   transition: .3s ease-in-out;
+  padding: 20px; /* Añadir padding interno para evitar superposiciones */
 }
 
-/*rodona*/
-
+/* Círculo de fondo */
 .card-details:before {
   content: "";
-  width: 250px; 
-  height: 250px; 
+  width: 250px; /* Tamaño para PC */
+  height: 250px;
   background: linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 50%; 
+  border-radius: 50%;
   z-index: -1;
   transition: .3s ease-in-out;
 }
@@ -248,10 +249,9 @@ body {
   background: linear-gradient(315deg, rgba(30, 48, 243, 0.8) 0%, rgba(226, 30, 128, 0.8) 100%);
 }
 
-/*rodona blanca*/
-
+/* Círculo blanco */
 .card-icons {
-  width: 150px;
+  width: 150px; /* Tamaño para PC */
   height: 150px;
   position: relative;
   margin: auto;
@@ -268,7 +268,7 @@ body {
   border: 2px solid;
   width: 100%;
   height: 100%;
-  border-radius: 50%; 
+  border-radius: 50%;
   background: #fff;
   border-color: rgba(104, 30, 243, 0.8);
   transition: .3s ease-in-out;
@@ -281,8 +281,39 @@ body {
 
 .card-icons img {
   position: relative;
-  width: 80px;
+  width: 80px; /* Tamaño para PC */
   height: 80px;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 767px) {
+  .creative-cards {
+    padding: 40px 0; /* Reducir padding para móviles */
+  }
+
+  .creative-cards .container .row .card-column {
+    flex: 1 1 100%; /* Ocupar el 100% del ancho en móviles */
+    margin-bottom: 40px; /* Más espacio entre tarjetas */
+  }
+
+  .card-details {
+    padding: 3px; /* Aumentar padding interno en móviles */
+  }
+
+  .card-details:before {
+    width: 180px; /* Reducir tamaño del círculo de fondo */
+    height: 180px;
+  }
+
+  .card-icons {
+    width: 120px; /* Reducir tamaño del círculo blanco */
+    height: 120px;
+  }
+
+  .card-icons img {
+    width: 60px; /* Reducir tamaño del icono */
+    height: 60px;
+  }
 }
 
 
